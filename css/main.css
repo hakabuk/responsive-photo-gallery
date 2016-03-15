@@ -1,0 +1,299 @@
+/***************************
+GENERAL: 
+****************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+ max-width: 940px;
+ margin: 0 auto;
+ padding: 0 5%;
+}
+
+a {
+ text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/***************************
+HEADEING: 
+****************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif; 
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+
+/***************************
+NAVIGATION: 
+****************************/
+
+nav{
+  text-align: center;
+  padding: 10px 0; 
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+/***************************
+FOOTER: 
+****************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 50px;
+  color: #ccc;
+  clear: both;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/***************************
+PAGE: PORTFOLIO
+****************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery div {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+}
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+/***************************
+PAGE: ABOUT
+****************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+/***************************
+PAGE: EVENTS
+****************************/
+
+.work-photo {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 30px;
+  border-radius: 5%;
+}
+
+#upcoming-events {
+	height: 440px;
+}
+
+/***************************
+PAGE: CONTACT
+****************************/
+
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;   
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.facebook a {
+  background-image: url('../img/facebook.png');
+}
+
+.contact-info li.linkedin a {
+  background-image: url('../img/linkedin.png');
+}
+
+/***************************
+COLORS: 
+****************************/
+
+/* Site body */ 
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #93b392;
+  border-color: #000;
+}
+
+/* nav backgound for mobile devices */
+nav {
+  background: #5c785b; 
+}
+
+/* logo text */
+h1, h2 {
+   color: #fff;
+} 
+
+/* links */
+a {
+ color: #5c785b; 
+}
+
+
+/* color for nav links */
+nav a, nav a:visited {
+  color: #fff; 
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #7d9c7c; 
+}
+
+
+/***************************
+LIGHTBOX: 
+****************************/
+
+#overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 20;
+    display: none;
+    text-align: center;
+}
+
+#overlay img {
+  padding-top: 10%;
+  max-width: 80%;
+  max-height: 70%;
+  margin: auto;
+}
+
+#overlay p {
+  color: white;
+}
+
+
+/***************************
+STICKY FOOTER: 
+****************************/
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -120px; 
+}
+.footer, .push {
+	height: 120px; 
+}
