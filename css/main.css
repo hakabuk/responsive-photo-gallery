@@ -6,18 +6,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#wrapper {
- max-width: 940px;
+.wrapper {
+ max-width: 900px;
  margin: 0 auto;
  padding: 0 5%;
 }
 
 a {
  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 h3 {
@@ -41,11 +37,11 @@ header {
 }
 
 h1 {
-  font-family: 'Changa One', sans-serif; 
+  font-family: lobster, sans-serif; 
   margin: 15px 0;
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: normal;
-  line-height: 0.8em;
+  line-height: 1em;
 }
 
 h2 {
@@ -54,14 +50,11 @@ h2 {
   font-weight: normal;
 }
 
-
-
-
 /***************************
 NAVIGATION: 
 ****************************/
 
-nav{
+nav {
   text-align: center;
   padding: 10px 0; 
   margin: 20px 0 0;
@@ -74,7 +67,6 @@ nav ul {
   padding: 0;
 }
 
-
 nav li {
   display: inline-block;
 }
@@ -84,40 +76,15 @@ nav a {
   padding: 15px 10px;
 }
 
-
-/***************************
-FOOTER: 
-****************************/
-
-footer {
-  font-size: 0.75em;
-  text-align: center;
-  padding-top: 50px;
-  color: #ccc;
-  clear: both;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-
 /***************************
 PAGE: PORTFOLIO
 ****************************/
 
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#gallery div {
+.gallery div {
   float: left;
   width: 45%;
   margin: 2.5%;
+  cursor: pointer;
 }
 
 .thumbnail {
@@ -126,7 +93,6 @@ PAGE: PORTFOLIO
   height: 200px;
   overflow: hidden;
 }
-
 
 .thumbnail img {
   position: absolute;
@@ -138,6 +104,7 @@ PAGE: PORTFOLIO
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
+
 .thumbnail img.portrait {
   width: 100%;
   height: auto;
@@ -152,22 +119,6 @@ PAGE: ABOUT
   max-width: 150px;
   margin: 0 auto 30px;
   border-radius: 100%;
-}
-
-
-/***************************
-PAGE: EVENTS
-****************************/
-
-.work-photo {
-  display: block;
-  max-width: 200px;
-  margin: 0 auto 30px;
-  border-radius: 5%;
-}
-
-#upcoming-events {
-	height: 440px;
 }
 
 /***************************
@@ -211,42 +162,34 @@ PAGE: CONTACT
 COLORS: 
 ****************************/
 
-/* Site body */ 
 body {
   background-color: #fff;
   color: #999;
 }
 
-/* green header */
 header {
-  background: #93b392;
+  background: #9e3333;
   border-color: #000;
 }
 
-/* nav backgound for mobile devices */
 nav {
-  background: #5c785b; 
+  background: #851c1c; 
 }
 
-/* logo text */
 h1, h2 {
    color: #fff;
 } 
 
-/* links */
 a {
- color: #5c785b; 
+ color: #bf8282; 
 }
 
-
-/* color for nav links */
 nav a, nav a:visited {
   color: #fff; 
 }
 
-/* selected nav link */
 nav a.selected, nav a:hover {
-  color: #7d9c7c; 
+  color: #bf8282; 
 }
 
 
@@ -279,21 +222,45 @@ LIGHTBOX:
 
 
 /***************************
-STICKY FOOTER: 
+FOOTER: 
 ****************************/
 
-* {
-	margin: 0;
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  color: #ccc;
+  clear: both;
 }
-html, body {
-	height: 100%;
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
-.wrapper {
-	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 100%;
-	margin: 0 auto -120px; 
+
+footer a {
+	text-decoration: none;
+	color: #ccc;
 }
-.footer, .push {
-	height: 120px; 
-}
+  
+  /*************************
+  PAGE: STICKY FOOTER
+  **************************/
+ 
+	 * {
+		margin: 0;
+	}
+
+	html, body {
+		height: 100%;
+	}
+
+	.wrapper {
+		min-height: 100%;
+		margin: 0 auto -120px; 
+	}
+
+	footer, .push {
+	padding-top: 50px;
+	height: 60px; 
+	}

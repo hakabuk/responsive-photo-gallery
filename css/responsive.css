@@ -1,9 +1,5 @@
 @media screen and (min-width:480px) {
   
-	#wrap {
-  	min-height: 100%;
-  }
-
 
   /***************************
   TWO COLUMN LAYOUT 
@@ -18,13 +14,12 @@
     width: 40%;
     float: right;
   }
-
-  
+ 
   /*************************
   PAGE: PORTFOLIO
   **************************/
 
-  #gallery div {
+  .gallery div {
     width: 28.3333%;
   }
 
@@ -40,15 +35,9 @@
     float: left;
     margin: 0 5% 80px 0;
   } 
-
-  .work-photo {
-    float: left;
-    margin: 0 5% 80px 0;
-  } 
-  
 }
 
-@media min-width:607px {
+@media min-width:1025px {
   
   /*************************
   HEADER
@@ -90,8 +79,7 @@
   PAGE: PORTFOLIO
   **************************/
 
-
-  #gallery img {
+  .gallery img {
     float: left;
   }
 
